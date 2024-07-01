@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Aspiring DevOps Engineer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(90deg, #007bff, #6610f2);
+      color: white;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease-in-out;
+      height: 100%;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      text-align: center;
+      /* Center align the card titles */
+    }
+
+    .card-text {
+      flex: 1;
+      text-align: justify;
+      /* Justify the card text */
+    }
+
+    .btn-primary {
+      margin-top: auto;
+    }
+
+    .progress {
+      height: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Raj Adeshra</h1>
+      <p class="lead">Aspiring DevOps Engineer</p>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <p class="text-center">Hello! I'm Raj Adeshra, an aspiring DevOps Engineer with a passion for automation, cloud
+        infrastructure, and continuous integration/continuous deployment (CI/CD) practices. I am dedicated to constantly
+        expanding my skill set and staying updated with the latest trends and technologies in the DevOps ecosystem.
+
+        My journey into DevOps started with a fascination for how automation can streamline development processes and
+        improve efficiency. This interest led me to dive deep into various tools and practices that form the backbone of
+        modern DevOps methodologies.</p>
+    </div>
+  </section>
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Content Recommendation System using AWS Personalize</h3>
+              <p class="card-text">The Personalized Content Recommendation System utilizes AWS Personalize to deliver
+                tailored content recommendations to users based on their interactions and preferences. AWS Personalize
+                is a fully managed machine learning service that allows developers to build sophisticated recommendation
+                engines with ease.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title text-center">La Fiesta</h3> <!-- Centered La Fiesta title -->
+              <p class="card-text">This project involves creating and hosting a static webpage using HTML and CSS on
+                Amazon S3. AWS S3 (Simple Storage Service) provides a cost-effective, highly scalable, and secure
+                storage solution that can be used to host static websites.</p>
+              <a href="https://mexican-website.s3.amazonaws.com/index.html" target="_blank" class="btn btn-primary">View
+                Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="skill-card mb-4">
+            <i class="fas fa-server fa-3x mb-3"></i>
+            <h3>Linux</h3>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="skill-card mb-4">
+            <i class="fab fa-docker fa-3x mb-3"></i>
+            <h3>Docker</h3>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="skill-card mb-4">
+            <i class="fas fa-cloud fa-3x mb-3"></i>
+            <h3>AWS</h3>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Contact</h2>
+      <p class="text-center">Email: raj.adeshra@example.com</p>
+      <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/raj-adeshra/"
+          target="_blank">linkedin.com/in/raj-adeshra</a></p>
+    </div>
+  </section>
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Raj Adeshra</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
